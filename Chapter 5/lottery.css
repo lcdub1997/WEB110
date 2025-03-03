@@ -1,0 +1,25 @@
+body {
+    background-image: url(greenbg.jpeg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: rgb(179, 162, 139);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-family: cursive;
+}
+ul{
+    list-style-image:url(moneyimg.png);
+}
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:visited{
+color: purple;
+border: solid white 3px;
+}
+a:hover{
+    color: green;
+    text-decoration: underline;
+}
