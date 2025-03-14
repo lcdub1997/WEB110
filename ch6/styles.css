@@ -1,0 +1,100 @@
+/*Lauren Wright CSS sheet*/
+/*astrik changes everything - shift8 - considered a reset for styles*/
+*{
+box-sizing: border-box;
+padding:0; /*clean-slate*/
+margin: 0;
+}
+
+
+body{
+    font-family: arial, sans-serif;
+    background:linear-gradient(90deg, #aa11ea, #374bce);
+    line-height: 1.6; /*line spacing*/
+    background-color: #cbd8e3db;
+}
+
+header{
+    background-color: #2c3e50; /*if they don't see the graident*/
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+header p {
+    color: white;
+}
+
+footer p{
+    color: white;
+}
+
+section p{
+    color: white;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+nav{
+    background-color: #34495e;
+    padding: 1.5rem 0;/*padding in rem on all sides*/
+}
+nav ul{
+    list-style-type: none; /*strips out the bullets*/
+    display: flex;/*makes the box flexible*/
+    justify-content: center;/*centers the text*/
+    gap: 3rem;/*gap between items in rem instead of &nbsp*/
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    color: #d9e8d8;
+    text-decoration: underline;
+}
+
+main{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/*this is for the sections of the page*/
+
+section{
+    background-color: #7f818a;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 2px solid #0b0a3f;
+    border-radius: 8px;
+}
+
+section h2{
+    color: #180e51;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #180e51;
+}
+img{
+    max-width: 30%;/*sizing for the images*/
+    height: auto; /*makes the images grow and shrink aka responsive*/
+    border-radius: 8px;/*this rounds the images*/
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
