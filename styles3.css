@@ -1,5 +1,5 @@
 /*Lauren Wright CSS sheet*/
-/*Index CSS Page*/
+/*Current Work in Progress Page*/
 *{
     box-sizing: border-box;
     padding:0; 
@@ -10,7 +10,7 @@
     body{
         font-family: arial, sans-serif;
         background:linear-gradient(180deg, #ffffff, #f6cb9c);
-        line-height: 1.6; 
+        line-height: 1.6; /*line spacing*/
         background-color: #cbd8e3db;
         margin-left: auto; margin-right: auto;
     }
@@ -42,11 +42,11 @@
     
     nav{
         background-color: #7c4c04;
-        padding: 1.5rem 0;
+        padding: 1.5rem 0;/*padding in rem on all sides*/
     }
     nav ul{
-        list-style-type: none;
-        display: flex;
+        list-style-type: none; /*strips out the bullets*/
+        display: flex;/*makes the box flexible*/
         justify-content: center;
         gap: 3rem;
     }
@@ -66,6 +66,7 @@
         padding: 2rem;
     }
     
+    /*this is for the sections of the page*/
     
     section{
         background-color: #7f818a;
@@ -85,15 +86,16 @@
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
         color: #180e51;
-        text-indent: 10px;
     }
     img{
-        max-width: 30%;
-        height: auto; 
-        border-radius: 8px;
+        max-width: 50%;/*sizing for the images*/
+        height: auto; /*makes the images grow and shrink aka responsive*/
+        border-radius: 8px;/*this rounds the images*/
         margin-bottom: 1.5rem;
-        max-height: 300px;
+        max-height: 500px;
         margin-left: 100px;
+        margin-top: 50px;
+        box-shadow: 10px 14px #272827;
     }
     
     footer{
