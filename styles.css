@@ -1,104 +1,91 @@
-/*Lauren Wright CSS sheet*/
-/*Index CSS Page*/
-*{
-    box-sizing: border-box;
-    padding:0; 
-    margin: 0;
-    }
-    
-    
-    body{
-        font-family: arial, sans-serif;
-        background:linear-gradient(180deg, #ffffff, #f6cb9c);
-        line-height: 1.6; 
-        background-color: #cbd8e3db;
-        margin-left: auto; margin-right: auto;
-    }
-    
-    header{
-        background-color: #7c4c04; 
-        text-align: center;
-        color: white;
-        padding: 1rem 0.5rem;
-        margin-bottom: 2rem;
-        background-size: cover;
-    }
+/*Lauren Wright CSS Sheet Sushi Delight*/
 
-    header p {
-        color: white;
-    }
-    
-    footer p{
-        color: white;
-    }
-    
-    section p{
-        color: white;
-    }
-    
-    h1{
-        font-size: 4rem;
-    }
-    
-    nav{
-        background-color: #7c4c04;
-        padding: 1.5rem 0;
-    }
-    nav ul{
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-    }
-    nav a{
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-    }
-    nav a:hover{
-        color: #2121f0;
-        text-decoration: underline;
-    }
-    
-    main{
-        max-width: 90%;
-        margin: 0 auto;
-        padding: 2rem;
-    }
-    
-    
-    section{
-        background-color: #7f818a;
-        margin-bottom: 3rem;
-        padding: 2rem;
-        border: 2px solid #0b0a3f;
-        border-radius: 8px;
-    }
-    
-    section h2{
-        color: #180e51;
-        margin-bottom: 1.5rem;
-        font-size: 2.5rem;
-    }
-    
-    p{
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-        color: #180e51;
-        text-indent: 10px;
-    }
-    img{
-        max-width: 30%;
-        height: auto; 
-        border-radius: 8px;
-        margin-bottom: 1.5rem;
-        max-height: 300px;
-        margin-left: 100px;
-    }
-    
-    footer{
-        background-color: #7c4c04;
-        text-align: center;
-        padding: 1.5rem 0;
-        margin-top: 3rem;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #0000001a;
+}
+
+body{
+    background: #d92323;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+header{
+    background: #d92323;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+nav{
+    background: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav a:visited{
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+nav a:hover{
+    background-color: #fff;
+    color: #d92323;
+}
+
+section{
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+
+main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img{
+    height: auto;
+    max-width: 70%;
+    opacity: 0.7;
+    object-fit: cover;
+}
+
+img:hover{
+    border: 1px solid #ddc10f;
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+footer{
+    clear: both;
+    background: #d92323;
+    color: white;
+    text-align: center;
+}
