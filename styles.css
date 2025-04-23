@@ -1,91 +1,97 @@
-/*Lauren Wright CSS Sheet Sushi Delight*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.wrapper{
-    width: 95%;
-    margin: 0 auto;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #0000001a;
-}
+/*styles.css for contact.html*/
 
 body{
-    background: #d92323;
-    color: black;
-    text-align: center;
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+
+}
+
+.container{
+    background-color: #fff;
     padding: 20px;
-    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 header{
-    background: #d92323;
-    color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 1.5em;
-}
-
-nav{
-    background: #ffcc00;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a{
-    display: inline;
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    font-weight: bold;
-}
-
-nav a:visited{
-    text-decoration: underline;
-    color: darkgreen;
-}
-
-nav a:hover{
-    background-color: #fff;
-    color: #d92323;
-}
-
-section{
-    float: left;
-    width: 50%;
-    padding: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 
 }
 
-main:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-img{
+header img{
+    max-width: 100px;
     height: auto;
-    max-width: 70%;
-    opacity: 0.7;
-    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-img:hover{
-    border: 1px solid #ddc10f;
-    opacity: 1;
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
+h2{
+    margin-top: 0;
+    color: #333;
+
+}
+
+.form-group{
+display: grid;
+gap: 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+
+}
+
+input[type="text"],input[type="email"], input[type="tel"], textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:  border-box;
+}
+
+textarea{
+    min-height: 80px;
+
+}
+
+.contact-options{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100, 1fr));
+    gap: 10px;
+
+}
+
+button[type="submit"]{
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover{
+    background-color: #4cae4c;
 
 }
 
 footer{
-    clear: both;
-    background: #d92323;
-    color: white;
     text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.9em;
 }
