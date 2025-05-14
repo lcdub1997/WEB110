@@ -1,0 +1,103 @@
+<!--Flex Grid Images-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+    <style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }/* Main CSS */
+    html, body {
+        background: linear-gradient(180deg, #f6cb9c, #ffffff);
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%; /*responsive images*/
+        height: auto; /*responsive images*/
+        vertical-align: middle;
+        display: inline-block; /*allows images to overflow - to avoid stacking*/
+    }
+
+    h1{
+        color: #7c4c04;
+        padding: 20px;
+    }
+
+    .grid-wrapper div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*container that allows for mobile friendliness and only shows two columns. one column would have one thing instead of 2*/
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+    }
+
+    .grid-wrapper .wide {
+grid-column: span 2;
+    }
+
+    .grid-wrapper .tall {
+grid-row: span 2;
+    }
+
+    .grid-wrapper .big {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    </style>
+</head>
+<body>
+    <h1>Thank You for Visiting My Page!</h1>
+    <div class="grid-wrapper">
+        <div>
+<img src="art.jpg" alt="tacos">
+</div>
+<div>
+    <img src="beewings.jpg" alt="torta">
+</div>
+<div class="tall">
+    <img src="cherry.jpg" alt="chilaquiles">
+</div>
+<div>
+    <img src="arttable.jpg" alt="chickenmole">
+</div>
+<div class="big">
+    <img src="headerbg2.jpg" alt="tostada">
+</div>
+<div class="big">
+    <img src="delsol.jpg" alt="churros">
+</div>
+<div class="wide">
+    <img src="funguy.jpg" alt="flautas">
+</div>
+<div class="big">
+    <img src="spacegard.jpg" alt="pozole">
+</div>
+<div>
+    <img src="spacegarden.jpg" alt="quesadilla">
+</div>
+<div class="wide">
+    <img src="mel.HEIC" alt="enchiladas">
+</div>
+<div class="big">
+    <img src="galaxygarden.jpg" alt="tostada">
+    </div>
+    <div class="big">
+        <img src="headerbg1.jpg" alt="tostada">
+        </div>
+        <div>
+            <img src="paint.jpg" alt="paint on table">
+        </div>
+</div>
+</body>
+</html>

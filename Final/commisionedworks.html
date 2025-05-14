@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Custom Art Request</title>
+        <link rel="stylesheet" href="styles5.css">
+    </head>
+    <body>
+        <header>
+            <h1>~LolaPaints~</h1>
+            <p>Welcome to My Art Page!</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="finishedworks.html"> Finished Art Work</a></li>
+                <li><a href="currentwip.html"> Current Work in Progress</a></li>
+                <li><a href="artistinspiration.html"> Artist Inspiration</a></li>
+                <li><a href="commisionedworks.html">Custom Art Request</a></li>
+                <li><a href="datatable.html">Pricing</a></li>
+                <li><a href="customerreviews.html">Customer Revivews</a></li>
+                </ul>
+            </nav>
+        <div class="container">
+    
+            <main>
+                <h2>Comissioned Custom Art Request</h2>
+                <p>I'd love to create your dream piece! Please fill out the form below.</p>
+                <form method="post" action="https://webdevbasics.net/scrips/demo.php">
+
+                    <div class="form group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required minlength="2" maxlength="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone"  name="phone" placeholder="555-555-5555">
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">What are you interested in?</label>
+                        <textarea id="interests" name="interests" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="cost">How much are you wanting to spend?</label>
+                        <textarea id="cost" name="cost" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="colorChoice">Which color would you like to see the most of?</label>
+                        <select id="colorChoice" name="colorChoice" multiple size="5">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="purple">Purple</option>
+                            <option value="beige">Beige</option>
+                            <option value="brown">Brown</option>
+                            <option value="orange">Orange</option>
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                        </select>
+                        <p style="font-size: 0.9em;">
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label>How would you prefer to be contacted you?</label>
+                        <div class="contact options">
+                            <input type="radio" id="noPreference" name="contactPreference" value="no_preference">
+                            <label for="noPreference">No Preference</label>
+                            <input type="radio" id="email" name="contactPreference" value="email">
+                            <label for="email">Email</label>
+                            <input type="radio" id="phone" name="contactPreference" value="phone">
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                    <p>
+                        <a href="mailto:lcdub1997@gmail.com">Contact Me</a> | &copy; 2025LolaPaints</p>
+            </footer>
+        </div>
+    </body>
+</html>
